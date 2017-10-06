@@ -44,9 +44,12 @@
         android:layout_height="50dp"
         android:onClick="clicat"
         android:text="3"
-        android:layout_alignBaseline="@+id/boto_1"
-        android:layout_alignBottom="@+id/boto_1"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignBaseline="@+id/boto_2"
+        android:layout_alignBottom="@+id/boto_2"
+        android:layout_toRightOf="@+id/boto_2"
+        android:layout_toEndOf="@+id/boto_2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp" />
 
     <Button
         android:id="@+id/boto_4"
@@ -142,6 +145,7 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
+        android:onClick="esborrar"
         android:text="esborra" />
 
     <Button

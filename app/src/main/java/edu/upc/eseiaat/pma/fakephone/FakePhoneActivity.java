@@ -16,6 +16,7 @@ public class FakePhoneActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fake_phone);
+
         number = (TextView) findViewById(R.id.numero);
 
         number.setText("");
@@ -34,5 +35,12 @@ public class FakePhoneActivity extends AppCompatActivity {
         Toast.makeText(this,missatge,Toast.LENGTH_SHORT).show();
     }
 
+    public void esborrar (View v) {
+        Button esborra = (Button) v;
+        String num = number.getText().toString();
+        num= num.substring(0, (num.length()-1));
+        number.setText(num);
+
+    }
 
 }
